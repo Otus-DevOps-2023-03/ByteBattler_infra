@@ -18,4 +18,4 @@ Host someinternalhost
 После чего можно сразу пробовать подключаться командой ssh someinternalhost
 
 bastion_IP = 158.160.38.183
-someinternalhost_IP = 10.156.0.3
+someinternalhost_IP = 52.250.90.118
