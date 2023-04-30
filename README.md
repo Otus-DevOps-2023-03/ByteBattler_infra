@@ -22,3 +22,31 @@ someinternalhost_IP = 10.128.0.17
 #Занятие 6
 testapp_IP = 51.250.78.131
 testapp_port = 9292
+
+##  Облачное тестовое приложение:
+
+Создание инстанса через CLI:
+yc compute instance create \
+--name reddit-app \
+--hostname reddit-app \
+--core-fraction=5 --memory=4 \
+--create-boot-disk image-folder-id=standard-images,image-family=ubuntu-1604-lts,size=10GB \
+--network-interface subnet-name=infra,nat-ip-version=ipv4 \
+--metadata serial-port-enable=1 \
+--ssh-key ~/.ssh/appuser.pub
+
+Чтобы скопировать файлы скриптов на сервер, выполните следующие команды:
+bash install_ruby.sh
+bash install_mongodb.sh
+bash deploy.sh
+
+## Создайте и настройте сервер автоматически с помощью сценария конфигурации cloud-init.
+Создание сервера с помощью скрипта конфигурации запуска:
+yc compute instance create \
+--name reddit-app \
+--hostname reddit-app \
+--core-fraction=5 --memory=4 \
+--create-boot-disk image-folder-id=standard-images,image-family=ubuntu-1604-lts,size=10GB \
+--network-interface subnet-name=infra,nat-ip-version=ipv4 \
+--metadata serial-port-enable=1 \
+--metadata-from-file user-data=metadata.yaml
