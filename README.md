@@ -20,7 +20,7 @@ bastion_IP = 51.250.90.118
 someinternalhost_IP = 10.128.0.17
 
 #Занятие 6
-testapp_IP = 51.250.78.131
+testapp_IP = 51.250.92.224
 testapp_port = 9292
 
 ##  Облачное тестовое приложение:
