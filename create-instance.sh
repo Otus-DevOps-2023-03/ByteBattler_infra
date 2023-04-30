@@ -1,5 +1,5 @@
 #!/bin/bash
-#Создание инстанса в Yandex Cloud
+#Создание инстанса
 yc compute instance create --name reddit-app \
   --hostname reddit-app \
   --memory=4 --cores=2 --core-fraction=5\
