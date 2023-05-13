@@ -11,7 +11,7 @@ variable "zone" {
 }
 variable "public_key_path" {
   # Описание переменной
-  description = "~/.ssh/appuser.pub"
+  description = "~/.ssh/ubuntu.pub"
 }
 variable "image_id" {
   description = "fd8uhia8mo6pvp57tmul"
@@ -23,5 +23,5 @@ variable "service_account_key_file" {
   description = "/home/alex/devops/terraform.json"
 }
 variable "private_key" {
-  description = "~/.ssh/appuser"
+  description = "~/.ssh/ubuntu"
 }
