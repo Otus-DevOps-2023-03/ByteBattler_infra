@@ -39,3 +39,12 @@ yc compute instance create \
 bash install_ruby.sh
 bash install_mongodb.sh
 bash deploy.sh
+
+## Terraform-1
+Установлен Terraform с помощью зеркала
+
+Настроены конфигурационные файлы
+
+Настроены файлы переменных
+
+Запущен инстанс
