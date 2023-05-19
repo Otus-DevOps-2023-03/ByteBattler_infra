@@ -17,11 +17,19 @@ variable "image_id" {
   description = "fd8uhia8mo6pvp57tmul"
 }
 variable "subnet_id" {
-  description = "e9bn0n2btvbf3e9tfj4c"
+  description = "e9b3h6f4udctlc726qpn"
 }
 variable "service_account_key_file" {
   description = "/home/alex/devops/terraform.json"
 }
 variable "private_key" {
   description = "~/.ssh/ubuntu"
+}
+variable "app_disk_image" {
+  description = "Disk image for reddit app"
+  default     = "fd817rr9pbbdlej3qu51"
+}
+variable "db_disk_image" {
+  description = "Disk image for reddit db"
+  default     = "fd8mih2m0ekoac9qq00q"
 }
