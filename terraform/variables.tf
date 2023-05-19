@@ -45,3 +45,6 @@ variable access_key {
 variable secret_key {
   description = "secret key"
 }
+variable bucket_name {
+  description = "bucket name"
+}
