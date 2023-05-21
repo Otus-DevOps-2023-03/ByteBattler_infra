@@ -1,6 +1,6 @@
 variable "public_key_path" {
   # Описание переменной
-  description = "~/.ssh/ubuntu.pub"
+  description = "~/.ssh/appuser.pub"
 }
 variable db_disk_image {
 description = "Disk image for reddit db"
