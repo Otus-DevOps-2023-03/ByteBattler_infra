@@ -1,5 +1,5 @@
 {
-  "key": "key.json",
+  "key": "packer/key.json",
   "fid": "111",
   "image": "ubuntu-1604-lts"
 }
